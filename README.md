@@ -103,7 +103,7 @@ for (int i = 0; i < insertIndex / 3; i ++) {
 ```
 Note that VBO_C is another VertexBufferObject for color buffer and C is another vectors to store the per-vertex color.
 
-Here is the result:
+Here is the result: (Actually the point is just under the cursor, I don't know why there are distance between them after recording)
 
 ![task1.1.1](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.1.1.gif)
 
@@ -201,6 +201,12 @@ void translateTriangle(int index, GLFWwindow* window) {
     VBO_C.update(C);
 }
 ```
+
+Here is the result:
+![task1.1.2](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.1.2.gif)
+
+Even after the vertex changed color during color mode, the original color will not be effected:
+![task1.1.2-1](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.1.2-1.gif)
 
 * Deletion mode (p):
 
