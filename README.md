@@ -203,9 +203,11 @@ void translateTriangle(int index, GLFWwindow* window) {
 ```
 
 Here is the result:
+
 ![task1.1.2](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.1.2.gif)
 
 Even after the vertex changed color during color mode, the original color will not be effected:
+
 ![task1.1.2-1](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.1.2-1.gif)
 
 * Deletion mode (p):
@@ -249,6 +251,10 @@ void deleteTriangle(int index) {
     }
 }
 ```
+
+Here is the result:
+
+![task1.1.3](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.1.3.gif)
 
 ## Rotation/Scale (Task 1.2)
 
@@ -296,6 +302,10 @@ void rotate(int triangle, double degree) {
 }
 ```
 
+Here is the result:
+
+![task1.2-1](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.2-1.gif)
+
 * Scale (k & l):
 
 Similar to rotation mode, we first detect the key k & l within key_callback function. If the key is pressed and there is triangle selected before in translation mode, call 'scale' function.
@@ -337,6 +347,10 @@ void scale(int triangle, float perc) {
     VBO.update(V);
 }
 ```
+
+Here is the result:
+
+![task1.2-2](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.2-2.gif)
 
 ## Colors (Task 1.3)
 
@@ -483,6 +497,10 @@ int getClosestVertex(glm::vec2 cursor) {
 }
 ```
 
+Here is the result:
+
+![task1.3](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.3.gif)
+
 ## View Control (Task 1.4)
 
 For this task, I create a matrix for view transformation and two other vectors viewScale and viewTrans to change the view matrix.
@@ -534,6 +552,10 @@ This viewScale vector is applied to the view matrix within the render loop by gl
 ```bash
 view = glm::scale(glm::mat4(1.f), viewScale);
 ```
+
+Here is the result:
+
+![task1.4-1](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.4-1.gif)
 
 * Pan the view (w, a, s, d):
 
@@ -599,6 +621,10 @@ glm::vec2 getCurrentWorldPos(GLFWwindow* window) {
 }
 ```
 
+Here is the result:
+
+![task1.4-2](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.4-2.gif)
+
 ## Add keyframing (Task 1.5)
 
 For this task, I implemented a key press event for moving to the next frame. When user press key 'q', all of the displaying objects will begin moving right 0.6f distance. Similarly, the key press event is caught in key_callback function. If the key is pressed, set the global variable 'qKey' to true. Then record the current status into 'Start' vector as the start frame, assign the end frame vector 'End' by the current status first. After that, edit the end frame such that each vector's x coordinate is incremented by 0.6f
@@ -649,6 +675,10 @@ void keyFraming(std::vector<glm::vec2> Start, std::vector<glm::vec2> End, float 
     VBO.update(V);
 }
 ```
+
+Here is the result:
+
+![task1.5](OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.5.gif)
 
 
 
