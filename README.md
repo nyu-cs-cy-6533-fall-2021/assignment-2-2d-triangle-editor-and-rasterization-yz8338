@@ -104,7 +104,8 @@ for (int i = 0; i < insertIndex / 3; i ++) {
 Note that VBO_C is another VertexBufferObject for color buffer and C is another vectors to store the per-vertex color.
 
 Here is the result:
-![1.1.1](OneDrive/桌面/CG_Assignment2/Assignment_2/task1.1.1.gif)
+
+![task1.1.1] (OneDrive/桌面/CG_Assignment2/Assignment_2/gif/task1.1.1.gif)
 
 * Translation mode (o): 
 
